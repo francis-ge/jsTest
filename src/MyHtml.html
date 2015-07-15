@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>MyHtml.html</title>
+    
+    <script type="text/javascript">
+ 			window.onload = function(){
+ 				var bt= document.getElementById("bt");
+ 				bt.onclick = function(){
+ 				
+	 				var and=document.createElement("a");
+	 				and.setAttribute("href", "http://www.baidu.com");
+	
+	 				var txt = document.createTextNode("超链接");
+	 				
+	 				and.appendChild(txt);
+	 				
+	 				var ul = document.getElementById("ul1");
+	 				ul.appendChild(and);
+	 					
+ 				}
+ 							
+ 			}
+    </script>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+    <button id="bt">click me</button>
+    <ul id="ul1">
+    </ul>
+  </body>
+</html>
